@@ -149,10 +149,14 @@ export const TarotCardPicker = () => {
       <div className="card-arc">
         {shuffledCards.map((card, index) => (
           <animated.div
-            key={`card-${card.name}`}
-            className={`card ${selectedCards.includes(card) ? "selected" : ""}`}
-            onClick={() => handleCardClick(card)}
-            style={cardAnimations[index]}
+            {...{
+              key: `card-${card.name}`,
+              className: `card ${
+                selectedCards.includes(card) ? "selected" : ""
+              }`,
+              onClick: () => handleCardClick(card),
+              style: cardAnimations[index],
+            }}
           >
             <div className="card-back"></div>
           </animated.div>
