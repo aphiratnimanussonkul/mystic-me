@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1e1e2f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-arc {
+  position: relative;
+  height: 300px;
+  width: 800px;
+}
+
+.card {
+  width: 80px;
+  height: 120px;
+  border-radius: 8px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/card-back.png');
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.card.selected {
+  border: 2px solid gold;
+}
+
+.selected-cards {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
