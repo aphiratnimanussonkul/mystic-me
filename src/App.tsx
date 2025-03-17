@@ -1,6 +1,6 @@
 import "./App.css";
 import TarotCardPicker from "./pages/TarotCardPage";
-import PhoneNumber from "./pages/PhoneNumber";
+import PhoneNumber from "./pages/PhoneNumberPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
